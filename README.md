@@ -1,6 +1,13 @@
-# Pokemon-TypeList
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/39142850/74567999-624dd200-4fba-11ea-8eb6-906c879d53fd.png" width="60%;" />
+</p>
+<br>
 
-> 📗 Pokemon type list / Nuxt.js(Axios)を使ってポケモンタイプ一覧
+## ポケモンタイプ一覧
+
+> 以下のGitHubに置かれたJSONファイルをWebAPIと見立てて、Nuxt.js + Axiosでの一覧表示
+> https://raw.githubusercontent.com/kotofurumiya/pokemon_data/master/data/pokemon_data.json<br>
+<br>
 
 ## Build Setup
 
