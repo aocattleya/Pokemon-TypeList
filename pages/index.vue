@@ -1,15 +1,15 @@
 <template>
   <div class="container">
-    <div class="pokemon">ポケモン - タイプ表 -</div>
+    <div class="pokemon">ガラルのポケモン タイプ一覧</div>
     <div class="top">
       <div class="top__no">No</div>
       <div class="top__name">名前</div>
       <div class="top__type--1">タイプ1</div>
       <div class="top__type--2">タイプ2</div>
     </div>
-    <div v-for="pokemon in pokemons" :key="pokemon.no" class="content">
-      <div class="content__no">{{ pokemon.no }}</div>
-      <div class="content__name">{{ pokemon.name }}</div>
+    <div v-for="(pokemon, index) in pokemons" :key="index" class="content">
+      <div class="content__no">{{ pokemon.number }}</div>
+      <div class="content__name">{{ pokemon.pokemon.name }}</div>
       <div class="content__type--1">{{ pokemon.types[0] }}</div>
       <div v-if="pokemon.types[1]" class="content__type--2">
         {{ pokemon.types[1] }}
@@ -22,7 +22,7 @@
 <script>
 const axios = require('axios')
 const url =
-  'https://raw.githubusercontent.com/kotofurumiya/pokemon_data/master/data/pokemon_data.json'
+  'https://raw.githubusercontent.com/amamama/reimagined-octo-disco/76fa592d889bb82ce00aedafd850d13e72f12118/src/assets/p.json'
 
 export default {
   asyncData({ params, error }) {
@@ -68,7 +68,7 @@ export default {
 .top {
   letter-spacing: -0.4em;
   line-height: 30px;
-  width: 400px;
+  width: 480px;
   margin: 0 auto;
   &__no {
     @include text;
@@ -80,19 +80,19 @@ export default {
   &__name {
     @include text;
     border-top: solid 1px #000;
-    width: 150px;
+    width: 230px;
     font-weight: bold;
   }
   &__type--1 {
     @include text;
     border-top: solid 1px #000;
-    width: 100px;
+    width: 90px;
     font-weight: bold;
   }
   &__type--2 {
     @include text;
     border-top: solid 1px #000;
-    width: 100px;
+    width: 90px;
     font-weight: bold;
   }
 }
@@ -100,7 +100,7 @@ export default {
 .content {
   letter-spacing: -0.4em;
   line-height: 30px;
-  width: 400px;
+  width: 480px;
   margin: 0 auto;
   &__no {
     @include text;
@@ -109,15 +109,15 @@ export default {
   }
   &__name {
     @include text;
-    width: 150px;
+    width: 230px;
   }
   &__type--1 {
     @include text;
-    width: 100px;
+    width: 90px;
   }
   &__type--2 {
     @include text;
-    width: 100px;
+    width: 90px;
   }
 }
 </style>
