@@ -2,7 +2,7 @@
   <img src="https://user-images.githubusercontent.com/39142850/74567999-624dd200-4fba-11ea-8eb6-906c879d53fd.png" width="60%;" />
 </p>
 
-<h3 align="center">https://nuxt-pokemon-typelist.web.app</h3>
+<h3 align="center">https://nuxt-pokemon-typelist.firebaseapp.com</h3>
 <br>
 
 ## ポケモンタイプ一覧
